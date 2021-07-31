@@ -3,7 +3,7 @@ Analysis of degree day data correlating energy demand with supply prices.
 
 ---
 ## Members
-- Chafic Carafeddine
+- Chafic Charafeddine
 - Greg Douglas
 - Remy Dillenseger
 
