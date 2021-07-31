@@ -20,8 +20,8 @@ Analysis of degree day data correlating energy demand with supply prices.
 
 ---
 ## Data Sources
-- ERCOT
-- DegreeDays.net
+- [ERCOT](http://www.ercot.com/about)
+- [Degree Days.net](https://www.degreedays.net/about)
 
 ## License
 This project is licensed under the MIT License.
