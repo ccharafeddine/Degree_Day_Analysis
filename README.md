@@ -14,12 +14,12 @@ Analysis of degree day data correlating energy demand with supply prices.
 
 ---
 ## Research Questions
-1. How did the temperature in February 2021 compare to 2020?
-    User Story: As a user, I want to be able to view data year over year based on the region (of Texas), so that I can compare temperature.
-2. How did energy prices compare during the same time period?
-    User Story: As a user, I want to be able to view data year over year, so I can compare energy prices.
-3. Is there any date in the range of data that shows a significant change in energy price?
-    User Story: As a user, I want to be able to visually correlate the temperature and price data, so that I don't have to look at spreadsheets.
+1. How did the temperature in February 2021 compare to 2020?  
+- **User Story:** As a user, I want to be able to view data year over year based on the region (of Texas), so that I can compare temperature.
+2. How did energy prices compare during the same time period?  
+- **User Story:** As a user, I want to be able to view data year over year, so I can compare energy prices.
+3. Is there any date in the range of data that shows a significant change in energy price?  
+- **User Story:** As a user, I want to be able to visually correlate the temperature and price data, so that I don't have to look at spreadsheets.
 
 ---
 ## Data Sources
