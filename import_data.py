@@ -1,8 +1,11 @@
 import pandas as pd
 from pathlib import Path
+import sqlalchemy
 
 month_list = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 year_list = ['2019', '2020', '2021']
+
+db_connection_string = 'sqlite:///Resources/energy_data.db'
 
 dam_path_prefix = 'Resources/ERCOT/rpt.00013060.0000000000000000.DAMLZHBSPP_'
 rtm_path_prefix = 'Resources/ERCOT/rpt.00013061.0000000000000000.RTMLZHBSPP_'
@@ -17,18 +20,12 @@ def get_ercot_year_df(path_prefix, year_str):
 
 
 def run():
-    print(f'Importing ERCOT {year_list[1]} data from CSV into DataFrame...', end='')
-    ercot_df = get_ercot_year_df(rtm_path_prefix, year_list[1])
-    print('Done!')
-    print(ercot_df.head())
-    for year in year_list[2:]:
-        print(f'Importing ERCOT {year} data from CSV into DataFrame...', end='')
-        new_df = get_ercot_year_df(rtm_path_prefix, year)
-        print('Done!')
-        print(new_df.head())
-        ercot_df = pd.concat([ercot_df, new_df], ignore_index=True,)
-    print(ercot_df.head())
-    print(ercot_df.tail())
+    engine = sqlalchemy.create_engine(db_connection_string)
+    ercot_rtm_2020 = get_ercot_year_df(rtm_path_prefix, '2020')
+    ercot_rtm_2021 = get_ercot_year_df(rtm_path_prefix, '2021')
+    
+    ercot_rtm_2020.to_sql('ERCOT_2020', engine)
+    ercot_rtm_2020.to_sql('ERCOT_2021', engine)
         
 if __name__ == '__main__':
     print('Importing CSV files...')
