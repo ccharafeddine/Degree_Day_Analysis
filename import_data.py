@@ -8,11 +8,7 @@ year_list = ['2019', '2020', '2021']
 interval_minutes = [0, 15, 30, 45]
 
 db_connection_string = 'sqlite:///Resources/energy_data.db'
-
-dam_path_prefix = 'Resources/ERCOT/rpt.00013060.0000000000000000.DAMLZHBSPP_'
-rtm_path_prefix = 'Resources/ERCOT/rpt.00013061.0000000000000000.RTMLZHBSPP_'
 rtm_csv_path_prefix = 'Resources/ERCOT/RTM-'
-
 
 def get_ercot_year_df(path_prefix, year_str):
     csv_path = Path(path_prefix + year_str + '.xlsx')
@@ -81,6 +77,7 @@ def arrange_ercot_columns(df):
 
 
 def run():
+    # ERCOT data
     engine = sqlalchemy.create_engine(db_connection_string)
     ercot_rtm_2020 = get_ercot_month_df(rtm_csv_path_prefix, '2020-02')
     ercot_rtm_2021 = get_ercot_month_df(rtm_csv_path_prefix, '2021-02')
@@ -88,7 +85,7 @@ def run():
     ercot_rtm_2021 = clean_rtm_data(ercot_rtm_2021)
     ercot_rtm_2020.to_sql('ERCOT_2020', engine)
     ercot_rtm_2021.to_sql('ERCOT_2021', engine)
-
+    
     
 if __name__ == '__main__':
     print('Importing CSV files...')
