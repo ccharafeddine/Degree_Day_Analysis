@@ -21,6 +21,7 @@ def get_ercot_year_df(path_prefix, year_str):
 
 
 def get_ercot_month_df(path_prefix, month_str):
+    print(f'Getting data from csv: {month_str}')
     return pd.read_csv(Path(path_prefix + month_str + '.csv'))
 
 
@@ -81,29 +82,12 @@ def arrange_ercot_columns(df):
 
 def run():
     engine = sqlalchemy.create_engine(db_connection_string)
-    print(f'Created db connection: {engine}')
-
-    month_str_2020 = '2020-02'
-    print(f'Getting data from csv: {month_str_2020}')
-    ercot_rtm_2020 = get_ercot_month_df(rtm_csv_path_prefix, month_str_2020)
-
-    month_str_2021 = '2021-02'
-    print(f'Getting data from csv: {month_str_2021}')
-    ercot_rtm_2021 = get_ercot_month_df(rtm_csv_path_prefix, month_str_2021)
-    
-    print(f'Cleaning data: {month_str_2020}')
+    ercot_rtm_2020 = get_ercot_month_df(rtm_csv_path_prefix, '2020-02')
+    ercot_rtm_2021 = get_ercot_month_df(rtm_csv_path_prefix, '2021-02')
     ercot_rtm_2020 = clean_rtm_data(ercot_rtm_2020)
-
-    print(f'Cleaning data: {month_str_2021}')
     ercot_rtm_2021 = clean_rtm_data(ercot_rtm_2021)
-    
-    ercot_table_name_2020 = 'ERCOT_2020'
-    print(f'Writing db table: {ercot_table_name_2020}')
-    ercot_rtm_2020.to_sql(ercot_table_name_2020, engine)
-
-    ercot_table_name_2021 = 'ERCOT_2021'
-    print(f'Writing db table: {ercot_table_name_2021}')
-    ercot_rtm_2021.to_sql(ercot_table_name_2021, engine)
+    ercot_rtm_2020.to_sql('ERCOT_2020', engine)
+    ercot_rtm_2021.to_sql('ERCOT_2021', engine)
 
     
 if __name__ == '__main__':
