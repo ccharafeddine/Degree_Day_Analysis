@@ -1,0 +1,33 @@
+,Time,Temperature,Dew Point,Humidity,Wind,Wind Speed,Wind Gust,Pressure,Precip.,Condition
+0,1:53 AM,7°F,-3°F,64°%,N,7°mph,0°mph,29.75°in,0.0°in,Fair
+1,2:53 AM,5°F,-4°F,66°%,NNW,8°mph,0°mph,29.76°in,0.0°in,Fair
+2,3:53 AM,4°F,-5°F,66°%,NNW,7°mph,0°mph,29.75°in,0.0°in,Fair
+3,4:53 AM,4°F,-4°F,70°%,NNW,5°mph,0°mph,29.73°in,0.0°in,Fair
+4,5:53 AM,4°F,-4°F,70°%,N,3°mph,0°mph,29.73°in,0.0°in,Mostly Cloudy
+5,6:53 AM,3°F,-4°F,73°%,NW,3°mph,0°mph,29.74°in,0.0°in,Partly Cloudy
+6,7:53 AM,4°F,-3°F,73°%,NNE,3°mph,0°mph,29.74°in,0.0°in,Fair
+7,8:53 AM,5°F,-3°F,70°%,N,6°mph,0°mph,29.75°in,0.0°in,Mostly Cloudy
+8,9:53 AM,8°F,-3°F,61°%,NNE,9°mph,0°mph,29.71°in,0.0°in,Mostly Cloudy
+9,10:53 AM,12°F,0°F,59°%,CALM,0°mph,0°mph,29.73°in,0.0°in,Mostly Cloudy
+10,11:53 AM,14°F,2°F,59°%,,0°mph,0°mph,29.72°in,0.0°in,Mostly Cloudy
+11,12:53 PM,15°F,2°F,56°%,VAR,5°mph,0°mph,29.73°in,0.0°in,Cloudy
+12,1:53 PM,17°F,2°F,52°%,ESE,8°mph,0°mph,29.68°in,0.0°in,Mostly Cloudy
+13,2:53 PM,17°F,5°F,59°%,SE,8°mph,0°mph,29.63°in,0.0°in,Cloudy
+14,3:53 PM,19°F,4°F,52°%,SSE,8°mph,0°mph,29.61°in,0.0°in,Cloudy
+15,4:53 PM,19°F,4°F,52°%,ESE,9°mph,0°mph,29.59°in,0.0°in,Cloudy
+16,5:53 PM,18°F,3°F,52°%,ESE,10°mph,0°mph,29.59°in,0.0°in,Cloudy
+17,6:53 PM,19°F,5°F,54°%,ESE,8°mph,0°mph,29.57°in,0.0°in,Cloudy
+18,7:53 PM,19°F,4°F,52°%,E,6°mph,0°mph,29.59°in,0.0°in,Cloudy
+19,8:29 PM,19°F,6°F,57°%,ESE,12°mph,0°mph,29.56°in,0.0°in,Light Sleet
+20,8:34 PM,19°F,6°F,57°%,SE,13°mph,0°mph,29.56°in,0.0°in,Light Snow and Sleet
+21,8:41 PM,19°F,6°F,57°%,SE,12°mph,20°mph,29.57°in,0.0°in,Cloudy
+22,8:53 PM,19°F,6°F,57°%,SE,12°mph,0°mph,29.58°in,0.0°in,Cloudy
+23,9:36 PM,19°F,8°F,62°%,SE,10°mph,0°mph,29.59°in,0.0°in,Light Sleet
+24,9:53 PM,19°F,8°F,62°%,SE,12°mph,0°mph,29.58°in,0.0°in,Light Sleet
+25,10:19 PM,19°F,9°F,65°%,SE,9°mph,0°mph,29.59°in,0.0°in,Light Snow and Sleet
+26,10:43 PM,20°F,10°F,65°%,SE,6°mph,0°mph,29.59°in,0.0°in,Light Snow
+27,10:53 PM,20°F,10°F,65°%,ESE,8°mph,0°mph,29.58°in,0.0°in,Light Snow
+28,11:21 PM,20°F,11°F,68°%,SE,7°mph,0°mph,29.59°in,0.0°in,Light Snow and Sleet
+29,11:53 PM,20°F,11°F,68°%,ESE,5°mph,0°mph,29.59°in,0.0°in,Light Snow and Sleet
+30,12:38 AM,21°F,12°F,68°%,E,5°mph,0°mph,29.59°in,0.0°in,Light Snow and Sleet
+31,12:53 AM,20°F,13°F,74°%,E,6°mph,0°mph,29.59°in,0.0°in,Snow and Sleet
