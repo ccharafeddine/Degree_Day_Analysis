@@ -1,0 +1,49 @@
+,Time,Temperature,Dew Point,Humidity,Wind,Wind Speed,Wind Gust,Pressure,Precip.,Condition
+0,1:53 AM,31°F,23°F,72°%,NE,16°mph,30°mph,29.54°in,0.0°in,Cloudy
+1,2:53 AM,30°F,24°F,79°%,NE,16°mph,0°mph,29.51°in,0.0°in,Wintry Mix
+2,3:01 AM,30°F,25°F,82°%,NNE,15°mph,0°mph,29.53°in,0.0°in,Wintry Mix
+3,3:33 AM,30°F,25°F,82°%,NNE,16°mph,0°mph,29.54°in,0.0°in,Cloudy
+4,3:53 AM,30°F,25°F,82°%,N,13°mph,0°mph,29.55°in,0.0°in,Cloudy
+5,4:10 AM,30°F,26°F,85°%,N,15°mph,0°mph,29.55°in,0.0°in,Wintry Mix
+6,4:38 AM,30°F,27°F,88°%,N,13°mph,0°mph,29.55°in,0.0°in,Wintry Mix
+7,4:53 AM,30°F,27°F,88°%,N,13°mph,0°mph,29.55°in,0.0°in,Wintry Mix
+8,5:53 AM,29°F,25°F,85°%,NNE,16°mph,25°mph,29.53°in,0.0°in,Wintry Mix
+9,6:06 AM,29°F,25°F,85°%,NNE,15°mph,0°mph,29.53°in,0.0°in,Wintry Mix
+10,6:53 AM,28°F,25°F,88°%,N,16°mph,0°mph,29.55°in,0.0°in,Wintry Mix
+11,7:09 AM,28°F,25°F,88°%,NNE,17°mph,0°mph,29.55°in,0.0°in,Cloudy
+12,7:21 AM,28°F,24°F,85°%,NNE,18°mph,0°mph,29.53°in,0.0°in,Wintry Mix
+13,7:53 AM,27°F,24°F,89°%,NNE,21°mph,26°mph,29.52°in,0.0°in,Wintry Mix / Windy
+14,8:11 AM,27°F,23°F,85°%,NNE,17°mph,28°mph,29.52°in,0.0°in,Cloudy
+15,8:53 AM,27°F,23°F,85°%,N,21°mph,0°mph,29.54°in,0.0°in,Cloudy / Windy
+16,9:13 AM,27°F,23°F,85°%,NNE,17°mph,28°mph,29.55°in,0.0°in,Wintry Mix
+17,9:47 AM,27°F,23°F,86°%,N,20°mph,0°mph,29.56°in,0.0°in,Wintry Mix
+18,9:53 AM,26°F,23°F,88°%,N,18°mph,0°mph,29.56°in,0.0°in,Wintry Mix
+19,10:07 AM,25°F,22°F,88°%,N,20°mph,26°mph,29.57°in,0.0°in,Snow and Sleet
+20,10:23 AM,25°F,22°F,88°%,N,18°mph,28°mph,29.57°in,0.0°in,Wintry Mix
+21,10:53 AM,25°F,22°F,88°%,NNE,20°mph,28°mph,29.57°in,0.0°in,Wintry Mix
+22,11:53 AM,25°F,21°F,85°%,N,17°mph,29°mph,29.60°in,0.0°in,Wintry Mix
+23,12:42 PM,25°F,22°F,88°%,NNE,16°mph,0°mph,29.59°in,0.0°in,Wintry Mix
+24,12:53 PM,25°F,22°F,88°%,N,22°mph,26°mph,29.59°in,0.0°in,Wintry Mix / Windy
+25,1:01 PM,26°F,22°F,84°%,N,18°mph,0°mph,29.58°in,0.0°in,Wintry Mix
+26,1:43 PM,25°F,22°F,88°%,N,21°mph,0°mph,29.57°in,0.0°in,Snow / Windy
+27,1:53 PM,26°F,22°F,84°%,N,21°mph,0°mph,29.57°in,0.0°in,Snow / Windy
+28,2:09 PM,26°F,22°F,84°%,N,18°mph,0°mph,29.57°in,0.0°in,Light Snow
+29,2:53 PM,26°F,22°F,84°%,N,21°mph,0°mph,29.56°in,0.0°in,Light Snow / Windy
+30,3:21 PM,25°F,22°F,88°%,N,20°mph,0°mph,29.56°in,0.0°in,Snow and Sleet
+31,3:53 PM,25°F,21°F,85°%,N,18°mph,29°mph,29.55°in,0.0°in,Snow and Sleet
+32,4:17 PM,24°F,21°F,88°%,N,22°mph,26°mph,29.55°in,0.0°in,Wintry Mix / Windy
+33,4:53 PM,24°F,20°F,84°%,N,21°mph,0°mph,29.55°in,0.0°in,Wintry Mix / Windy
+34,5:15 PM,23°F,19°F,85°%,N,17°mph,28°mph,29.58°in,0.0°in,Wintry Mix
+35,5:53 PM,23°F,19°F,85°%,N,20°mph,0°mph,29.59°in,0.0°in,Wintry Mix
+36,6:53 PM,22°F,18°F,85°%,N,20°mph,0°mph,29.61°in,0.0°in,Wintry Mix
+37,6:57 PM,22°F,18°F,85°%,N,16°mph,25°mph,29.61°in,0.0°in,Snow and Sleet
+38,7:29 PM,22°F,16°F,78°%,N,18°mph,0°mph,29.62°in,0.0°in,Snow and Sleet
+39,7:53 PM,21°F,16°F,81°%,N,18°mph,28°mph,29.63°in,0.0°in,Snow and Sleet
+40,8:18 PM,20°F,14°F,78°%,N,24°mph,31°mph,29.61°in,0.0°in,Light Snow / Windy
+41,8:53 PM,19°F,12°F,74°%,N,22°mph,33°mph,29.63°in,0.0°in,Light Snow and Sleet / Windy
+42,9:53 PM,18°F,12°F,78°%,NNW,18°mph,30°mph,29.64°in,0.0°in,Light Snow and Sleet
+43,10:53 PM,17°F,10°F,74°%,N,20°mph,35°mph,29.65°in,0.0°in,Light Snow and Sleet
+44,11:53 PM,16°F,9°F,74°%,N,20°mph,31°mph,29.69°in,0.0°in,Light Snow and Sleet
+45,12:11 AM,15°F,9°F,77°%,NNW,22°mph,36°mph,29.72°in,0.0°in,Light Snow and Sleet / Windy
+46,12:35 AM,15°F,10°F,80°%,NNW,13°mph,30°mph,29.69°in,0.0°in,Light Snow
+47,12:53 AM,14°F,10°F,84°%,NNW,21°mph,31°mph,29.71°in,0.0°in,Snow / Windy

@@ -1,0 +1,30 @@
+,Time,Temperature,Dew Point,Humidity,Wind,Wind Speed,Wind Gust,Pressure,Precip.,Condition
+0,1:53 AM,39°F,32°F,76°%,CALM,0°mph,0°mph,29.52°in,0.0°in,Fair
+1,2:53 AM,41°F,34°F,76°%,CALM,0°mph,0°mph,29.52°in,0.0°in,Fair
+2,3:53 AM,39°F,33°F,79°%,NNE,5°mph,0°mph,29.53°in,0.0°in,Fair
+3,4:53 AM,37°F,31°F,79°%,CALM,0°mph,0°mph,29.53°in,0.0°in,Fair
+4,5:53 AM,38°F,32°F,79°%,N,8°mph,0°mph,29.53°in,0.0°in,Fair
+5,6:25 AM,41°F,32°F,70°%,N,7°mph,0°mph,29.55°in,0.0°in,Mostly Cloudy
+6,6:53 AM,40°F,34°F,79°%,N,8°mph,0°mph,29.55°in,0.0°in,Partly Cloudy
+7,7:53 AM,48°F,34°F,58°%,NE,8°mph,0°mph,29.56°in,0.0°in,Cloudy
+8,8:02 AM,48°F,34°F,58°%,NE,10°mph,0°mph,29.57°in,0.0°in,Cloudy
+9,8:53 AM,48°F,34°F,58°%,NNE,8°mph,0°mph,29.59°in,0.0°in,Cloudy
+10,9:53 AM,49°F,34°F,56°%,NE,7°mph,0°mph,29.61°in,0.0°in,Cloudy
+11,10:53 AM,51°F,36°F,56°%,NE,7°mph,0°mph,29.61°in,0.0°in,Cloudy
+12,11:53 AM,56°F,37°F,49°%,ENE,6°mph,0°mph,29.62°in,0.0°in,Cloudy
+13,12:53 PM,59°F,40°F,49°%,ENE,7°mph,0°mph,29.61°in,0.0°in,Cloudy
+14,1:53 PM,62°F,43°F,50°%,ENE,8°mph,0°mph,29.57°in,0.0°in,Cloudy
+15,2:53 PM,66°F,46°F,48°%,E,6°mph,0°mph,29.53°in,0.0°in,Mostly Cloudy
+16,3:28 PM,67°F,47°F,49°%,CALM,0°mph,0°mph,29.52°in,0.0°in,Mostly Cloudy
+17,3:53 PM,68°F,51°F,55°%,E,7°mph,0°mph,29.51°in,0.0°in,Cloudy
+18,4:53 PM,69°F,53°F,57°%,SE,10°mph,0°mph,29.49°in,0.0°in,Cloudy
+19,5:53 PM,69°F,54°F,58°%,SE,9°mph,0°mph,29.47°in,0.0°in,Fair
+20,6:53 PM,68°F,56°F,65°%,SE,7°mph,0°mph,29.46°in,0.0°in,Fair
+21,7:53 PM,65°F,55°F,70°%,E,7°mph,0°mph,29.46°in,0.0°in,Mostly Cloudy
+22,8:53 PM,64°F,56°F,75°%,S,9°mph,0°mph,29.47°in,0.0°in,Fair
+23,9:53 PM,64°F,58°F,80°%,SSE,15°mph,23°mph,29.48°in,0.0°in,Partly Cloudy
+24,10:53 PM,64°F,58°F,80°%,S,13°mph,0°mph,29.49°in,0.0°in,Mostly Cloudy
+25,11:07 PM,64°F,58°F,80°%,S,14°mph,0°mph,29.49°in,0.0°in,Mostly Cloudy
+26,11:53 PM,62°F,58°F,86°%,S,8°mph,0°mph,29.49°in,0.0°in,Partly Cloudy
+27,12:45 AM,62°F,58°F,86°%,S,12°mph,0°mph,29.49°in,0.0°in,Mostly Cloudy
+28,12:53 AM,63°F,58°F,84°%,S,14°mph,21°mph,29.48°in,0.0°in,Mostly Cloudy

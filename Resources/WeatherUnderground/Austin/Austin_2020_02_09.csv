@@ -1,0 +1,31 @@
+,Time,Temperature,Dew Point,Humidity,Wind,Wind Speed,Wind Gust,Pressure,Precip.,Condition
+0,1:53 AM,62°F,58°F,86°%,S,10°mph,0°mph,29.47°in,0.0°in,Cloudy
+1,2:19 AM,61°F,58°F,90°%,S,9°mph,0°mph,29.46°in,0.0°in,Cloudy
+2,2:53 AM,62°F,58°F,86°%,S,12°mph,0°mph,29.45°in,0.0°in,Cloudy
+3,3:53 AM,63°F,60°F,90°%,S,9°mph,0°mph,29.43°in,0.0°in,Cloudy
+4,4:53 AM,64°F,61°F,90°%,S,15°mph,0°mph,29.42°in,0.0°in,Cloudy
+5,5:53 AM,65°F,62°F,90°%,S,18°mph,0°mph,29.41°in,0.0°in,Cloudy
+6,6:53 AM,65°F,63°F,93°%,SSE,12°mph,0°mph,29.41°in,0.0°in,Light Rain
+7,7:53 AM,65°F,63°F,93°%,SSE,12°mph,0°mph,29.40°in,0.0°in,Cloudy
+8,8:53 AM,67°F,65°F,93°%,S,12°mph,0°mph,29.41°in,0.0°in,Light Rain
+9,9:53 AM,67°F,65°F,93°%,S,10°mph,0°mph,29.42°in,0.0°in,Light Drizzle
+10,10:53 AM,68°F,66°F,93°%,S,13°mph,0°mph,29.45°in,0.0°in,Light Drizzle
+11,11:53 AM,69°F,67°F,93°%,SSE,15°mph,23°mph,29.44°in,0.0°in,Light Rain
+12,12:53 PM,69°F,67°F,93°%,SSE,14°mph,23°mph,29.42°in,0.0°in,Light Drizzle
+13,1:53 PM,70°F,67°F,90°%,S,17°mph,0°mph,29.39°in,0.0°in,Cloudy
+14,2:53 PM,70°F,67°F,90°%,SSE,12°mph,24°mph,29.37°in,0.0°in,Cloudy
+15,3:45 PM,71°F,67°F,87°%,SSE,9°mph,0°mph,29.36°in,0.0°in,Cloudy
+16,3:53 PM,71°F,67°F,87°%,SSE,9°mph,0°mph,29.36°in,0.0°in,Cloudy
+17,4:46 PM,72°F,68°F,87°%,SSE,14°mph,22°mph,29.32°in,0.0°in,Cloudy
+18,4:53 PM,73°F,68°F,84°%,S,7°mph,21°mph,29.33°in,0.0°in,Cloudy
+19,5:04 PM,73°F,68°F,84°%,S,8°mph,0°mph,29.33°in,0.0°in,Cloudy
+20,5:53 PM,73°F,68°F,84°%,SSE,13°mph,0°mph,29.32°in,0.0°in,Cloudy
+21,6:10 PM,74°F,68°F,82°%,S,15°mph,23°mph,29.33°in,0.0°in,Cloudy
+22,6:53 PM,73°F,68°F,84°%,SSE,14°mph,0°mph,29.32°in,0.0°in,Cloudy
+23,7:53 PM,72°F,68°F,87°%,SSE,10°mph,0°mph,29.35°in,0.0°in,Cloudy
+24,8:53 PM,72°F,68°F,87°%,S,10°mph,0°mph,29.37°in,0.0°in,Cloudy
+25,9:03 PM,72°F,68°F,87°%,S,10°mph,0°mph,29.37°in,0.0°in,Cloudy
+26,9:53 PM,71°F,69°F,93°%,SSE,7°mph,0°mph,29.37°in,0.0°in,Light Drizzle
+27,10:53 PM,71°F,69°F,93°%,S,8°mph,0°mph,29.39°in,0.0°in,Cloudy
+28,11:53 PM,71°F,69°F,93°%,S,12°mph,0°mph,29.38°in,0.0°in,Light Rain
+29,12:53 AM,71°F,69°F,93°%,S,8°mph,0°mph,29.38°in,0.0°in,Cloudy

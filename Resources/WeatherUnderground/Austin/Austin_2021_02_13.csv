@@ -1,0 +1,32 @@
+,Time,Temperature,Dew Point,Humidity,Wind,Wind Speed,Wind Gust,Pressure,Precip.,Condition
+0,1:53 AM,30°F,23°F,75°%,N,20°mph,0°mph,29.56°in,0.0°in,Cloudy
+1,2:53 AM,30°F,23°F,75°%,N,17°mph,0°mph,29.57°in,0.0°in,Cloudy
+2,3:14 AM,29°F,23°F,78°%,N,17°mph,0°mph,29.56°in,0.0°in,Cloudy
+3,3:53 AM,29°F,23°F,78°%,N,15°mph,0°mph,29.55°in,0.0°in,Cloudy
+4,4:53 AM,28°F,23°F,81°%,N,17°mph,0°mph,29.55°in,0.0°in,Cloudy
+5,5:53 AM,28°F,23°F,81°%,N,15°mph,0°mph,29.55°in,0.0°in,Cloudy
+6,6:53 AM,28°F,23°F,81°%,N,15°mph,0°mph,29.57°in,0.0°in,Cloudy
+7,7:53 AM,28°F,23°F,81°%,N,18°mph,0°mph,29.58°in,0.0°in,Cloudy
+8,8:26 AM,28°F,24°F,85°%,N,14°mph,0°mph,29.59°in,0.0°in,Cloudy
+9,8:53 AM,28°F,24°F,85°%,N,17°mph,0°mph,29.60°in,0.0°in,Cloudy
+10,9:11 AM,28°F,24°F,85°%,N,15°mph,0°mph,29.60°in,0.0°in,Wintry Mix
+11,9:53 AM,29°F,24°F,82°%,N,16°mph,0°mph,29.61°in,0.0°in,Light Snow
+12,10:53 AM,29°F,23°F,78°%,N,20°mph,26°mph,29.64°in,0.0°in,Cloudy
+13,11:53 AM,30°F,24°F,79°%,N,20°mph,0°mph,29.65°in,0.0°in,Cloudy
+14,12:53 PM,30°F,23°F,75°%,N,16°mph,0°mph,29.63°in,0.0°in,Cloudy
+15,1:53 PM,31°F,24°F,76°%,N,17°mph,0°mph,29.59°in,0.0°in,Cloudy
+16,2:53 PM,31°F,23°F,72°%,N,17°mph,0°mph,29.56°in,0.0°in,Cloudy
+17,3:53 PM,31°F,23°F,72°%,N,15°mph,0°mph,29.56°in,0.0°in,Wintry Mix
+18,4:53 PM,31°F,27°F,85°%,N,14°mph,0°mph,29.55°in,0.0°in,Wintry Mix
+19,5:14 PM,31°F,26°F,82°%,N,14°mph,0°mph,29.54°in,0.0°in,Cloudy
+20,5:53 PM,32°F,25°F,75°%,N,15°mph,0°mph,29.54°in,0.0°in,Cloudy
+21,6:53 PM,32°F,25°F,75°%,N,16°mph,0°mph,29.55°in,0.0°in,Cloudy
+22,7:53 PM,32°F,25°F,75°%,N,15°mph,0°mph,29.56°in,0.0°in,Cloudy
+23,8:53 PM,32°F,25°F,75°%,N,14°mph,0°mph,29.57°in,0.0°in,Cloudy
+24,9:38 PM,31°F,24°F,76°%,N,20°mph,0°mph,29.59°in,0.0°in,Cloudy
+25,9:53 PM,31°F,24°F,76°%,N,16°mph,0°mph,29.60°in,0.0°in,Cloudy
+26,10:51 PM,30°F,23°F,75°%,N,17°mph,25°mph,29.61°in,0.0°in,Wintry Mix
+27,10:53 PM,31°F,23°F,72°%,N,18°mph,24°mph,29.61°in,0.0°in,Wintry Mix
+28,11:53 PM,31°F,24°F,76°%,N,15°mph,0°mph,29.59°in,0.0°in,Wintry Mix
+29,12:30 AM,31°F,24°F,76°%,NNE,18°mph,0°mph,29.56°in,0.0°in,Cloudy
+30,12:53 AM,31°F,23°F,72°%,NNE,17°mph,29°mph,29.55°in,0.0°in,Cloudy
