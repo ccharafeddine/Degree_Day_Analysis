@@ -27,6 +27,7 @@ Analysis of degree day data correlating energy demand with supply prices.
 - [Degree Days.net](https://www.degreedays.net/about)
 - [Weather Underground](https://www.wunderground.com/about/our-company)
     - Austin - Austin Energy (AEN) Load Zone
+    - Corpus Christi - South Load Zone
     - Dallas - North Load Zone
     - Houston - Houston Load Zone
     - San Angelo - West Load Zone
