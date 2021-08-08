@@ -3,9 +3,9 @@ Analysis of degree day data correlating energy demand with supply prices.
 
 ---
 ## Members
-- Chafic Charafeddine - Weather data scraping
-- Greg Douglas - Visualizations
-- Remy Dillenseger - Data parsing and database creation
+- **Chafic Charafeddine** - Weather data scraping
+- **Greg Douglas** - Visualizations
+- **Remy Dillenseger** - Data parsing and database creation
 
 ---
 ## Description
