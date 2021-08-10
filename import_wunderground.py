@@ -66,45 +66,45 @@ def run():
 
 
 
-    # Feb 2020 filenames
-    # csv_path_list = []
-    # for i in range (1, 29):
-    #     day_string = str(i).zfill(2)
-    #     csv_path = Path(wunderground_csv_path_prefix + '2020-02-' + day_string + '.csv')
-    #     csv_path_list.append(csv_path)
+#    Feb 2020 filenames
+    csv_path_list = []
+    for i in range (1, 29):
+        day_string = str(i).zfill(2)
+        csv_path = Path(wunderground_csv_path_prefix + '2020-02-' + day_string + '.csv')
+        csv_path_list.append(csv_path)
 
-    # wu_2020_df = pd.read_csv(csv_path_list[0])
-    # wu_2020_df['Datetime'] = wu_2020_df.apply(lambda x: gen_datetime(dt.date(2020,2,1), x['Time']),axis=1)
-    # wu_2020_df = clean_dataframe(wu_2020_df)
-    # for i, path in enumerate(csv_path_list[1:]):
-    #     new_df = pd.read_csv(path)
-    #     new_df['Datetime'] = new_df.apply(lambda x: gen_datetime(dt.date(2020,2,i+2), x['Time']),axis=1)
-    #     new_df = clean_dataframe(new_df)
-    #     wu_2020_df = wu_2020_df.append(new_df, ignore_index=True)
-    # wu_2020_df.set_index('Datetime', inplace=True)
-    # print(wu_2020_df)
+    wu_2020_df = pd.read_csv(csv_path_list[0])
+    wu_2020_df['Datetime'] = wu_2020_df.apply(lambda x: gen_datetime(dt.date(2020,2,1), x['Time']),axis=1)
+    wu_2020_df = clean_dataframe(wu_2020_df)
+    for i, path in enumerate(csv_path_list[1:]):
+        new_df = pd.read_csv(path)
+        new_df['Datetime'] = new_df.apply(lambda x: gen_datetime(dt.date(2020,2,i+2), x['Time']),axis=1)
+        new_df = clean_dataframe(new_df)
+        wu_2020_df = wu_2020_df.append(new_df, ignore_index=True)
+    wu_2020_df.set_index('Datetime', inplace=True)
+    print(wu_2020_df)
 
-    # Feb 2021 filenames
-    # csv_path_list = []
-    # for i in range (1, 29):
-    #     day_string = str(i).zfill(2)
-    #     csv_path = Path(wunderground_csv_path_prefix + '2021-02-' + day_string + '.csv')
-    #     csv_path_list.append(csv_path)
+#    Feb 2021 filenames
+    csv_path_list = []
+    for i in range (1, 29):
+        day_string = str(i).zfill(2)
+        csv_path = Path(wunderground_csv_path_prefix + '2021-02-' + day_string + '.csv')
+        csv_path_list.append(csv_path)
 
-    # wu_2021_df = pd.read_csv(csv_path_list[0])
-    # wu_2021_df['Datetime'] = wu_2021_df.apply(lambda x: gen_datetime(dt.date(2021,2,1), x['Time']),axis=1)
-    # wu_2021_df = clean_dataframe(wu_2021_df)
-    # for i, path in enumerate(csv_path_list[1:]):
-    #     new_df = pd.read_csv(path)
-    #     new_df['Datetime'] = new_df.apply(lambda x: gen_datetime(dt.date(2021,2,i+2), x['Time']),axis=1)
-    #     new_df = clean_dataframe(new_df)
+    wu_2021_df = pd.read_csv(csv_path_list[0])
+    wu_2021_df['Datetime'] = wu_2021_df.apply(lambda x: gen_datetime(dt.date(2021,2,1), x['Time']),axis=1)
+    wu_2021_df = clean_dataframe(wu_2021_df)
+    for i, path in enumerate(csv_path_list[1:]):
+        new_df = pd.read_csv(path)
+        new_df['Datetime'] = new_df.apply(lambda x: gen_datetime(dt.date(2021,2,i+2), x['Time']),axis=1)
+        new_df = clean_dataframe(new_df)
 
-    #     wu_2021_df = wu_2021_df.append(new_df, ignore_index=True)
-    # wu_2021_df.set_index('Datetime', inplace=True)
-    # print(wu_2021_df)
+        wu_2021_df = wu_2021_df.append(new_df, ignore_index=True)
+    wu_2021_df.set_index('Datetime', inplace=True)
+    print(wu_2021_df)
 
-    # wu_2020_df.to_sql('WU_2020', con=engine, if_exists='replace')
-    # wu_2021_df.to_sql('WU_2021', con=engine, if_exists='replace')
+    wu_2020_df.to_sql('WU_Houston_2020', con=engine, if_exists='replace')
+    wu_2021_df.to_sql('WU_Houston_2021', con=engine, if_exists='replace')
     inspector = sqlalchemy.inspect(engine)
     print(inspector.get_table_names())
     return
