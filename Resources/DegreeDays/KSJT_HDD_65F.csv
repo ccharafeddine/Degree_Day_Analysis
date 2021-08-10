@@ -1,0 +1,27 @@
+Description:,"Fahrenheit-based heating degree days with a base temperature of 65 F"
+Source:,"www.degreedays.net"
+Accuracy:,"Estimates were made to account for missing data: the ""% Estimated"" column shows how much each figure was affected (0% is best, 100% is worst)"
+Station:,"MATHIS FIELD, TX, US (100.50W,31.35N)"
+Station ID:,KSJT
+
+Month starting,HDD 65,% Estimated
+2019-12-01,487,0
+2020-01-01,463.5,0.03
+2020-02-01,477.6,0.03
+2020-03-01,164,0.03
+2020-04-01,153.8,0.03
+2020-05-01,23,0
+2020-06-01,3.5,0
+2020-07-01,0,0
+2020-08-01,0,0.03
+2020-09-01,60.6,1
+2020-10-01,194.7,0.03
+2020-11-01,262.2,0
+2020-12-01,538.7,0
+2021-01-01,588.1,0.03
+2021-02-01,642.7,0.1
+2021-03-01,241.1,0.03
+2021-04-01,158.3,0
+2021-05-01,39.9,0
+2021-06-01,3.5,0.03
+2021-07-01,0,0.1

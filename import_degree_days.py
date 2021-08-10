@@ -6,6 +6,13 @@ import datetime as dt
 db_connection_string = 'sqlite:///Resources/energy_data.db'
 csv_path = Path('Resources/DegreeDays/KHOU_HDD_65F.csv')
 
+austin_csv_path = Path('Resources/DegreeDays/KAUS_HDD_65F.csv')
+corpus_christi_csv_path = Path('Resources/DegreeDays/KCRP_HDD_65F.csv')
+dallas_csv_path = Path('Resources/DegreeDays/KDAL_HDD_65F.csv')
+houston_csv_path = Path('Resources/DegreeDays/KHOU_HDD_65F.csv')
+san_angelo_csv_path = Path('Resources/DegreeDays/KSJT_HDD_65F.csv')
+san_antonio_csv_path = Path('Resources/DegreeDays/KSAT_HDD_65F.csv')
+
 
 def convert_datestring_to_datetime(date_str):
     datetime_obj = dt.datetime.strptime(date_str, '%Y-%m-%d')
