@@ -27,19 +27,24 @@ def clean_rtm_data(df):
 
     print(f"filtering data...")
     df = filter_rtm_data(df, filter_column, settlement_point_filter)
-    print(df.head())
 
     print(f"appending datetime column...")
     df = append_datetime_column(df)
-    print(df.head())
 
     print(f"arranging columns...")
     df = arrange_ercot_columns(df)
-    print(df.head())
+    
+    print(f"removing commas...")
+    df = remove_commas(df)
+
     print(f"done.")
 
     return df
 
+
+def remove_commas(df):
+    df['Settlement Point Price'] = df['Settlement Point Price'].replace(',', '', regex=True).astype('float')
+    return df
 
 def filter_rtm_data(df, filter_column, filter_value):
     df = df.loc[df[filter_column] == filter_value]
@@ -49,14 +54,14 @@ def filter_rtm_data(df, filter_column, filter_value):
 
 def append_datetime_column(df):
     new_column = []
-    print(df.index)
-    print(df['Delivery Date'][0])
     for i in df.index:
         print(f'\r{100*i/df.index.stop:5.1f}% complete... ', end='')
         # new_column.append(create_datetime(df[i]['Delivery Date'], df[i]['Delivery Hour'], df[i]['Delivery Interval']))
         new_column.append(create_datetime(df['Delivery Date'][i], df['Delivery Hour'][i], df['Delivery Interval'][i]))
     print('Done.')
-    df['Datetime'] = new_column
+#    df['Datetime'] = new_column
+    df.loc[:, 'Datetime'] = new_column
+    print(df.head())
     return df
 
 
@@ -69,10 +74,13 @@ def create_datetime(date_string, hour_int, interval_index):
 
 
 def arrange_ercot_columns(df):
+    print('arranging columns')
     drop_columns_list = ['Delivery Date', 'Delivery Hour', 'Delivery Interval', 'Repeated Hour Flag', 'Settlement Point Name', 'Settlement Point Type']
     df.drop(columns=drop_columns_list, inplace=True)
-    df = df[['Datetime', 'Settlement Point Price']]
+    df = df.loc[:, ('Datetime', 'Settlement Point Price')]
     df.set_index('Datetime', inplace=True)
+    print('columns arranged')
+    print(df.head())
     return df
 
 
@@ -83,8 +91,8 @@ def run():
     ercot_rtm_2021 = get_ercot_month_df(rtm_csv_path_prefix, '2021-02')
     ercot_rtm_2020 = clean_rtm_data(ercot_rtm_2020)
     ercot_rtm_2021 = clean_rtm_data(ercot_rtm_2021)
-    ercot_rtm_2020.to_sql('ERCOT_2020', engine)
-    ercot_rtm_2021.to_sql('ERCOT_2021', engine)
+    ercot_rtm_2020.to_sql('ERCOT_2020', engine, if_exists='replace')
+    ercot_rtm_2021.to_sql('ERCOT_2021', engine, if_exists='replace')
     
     
 if __name__ == '__main__':
