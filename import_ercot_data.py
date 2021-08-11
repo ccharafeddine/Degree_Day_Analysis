@@ -2,6 +2,7 @@ import pandas as pd
 from pathlib import Path
 import sqlalchemy
 import datetime as dt
+import helpful_functions
 
 month_list = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 year_list = ['2019', '2020', '2021']

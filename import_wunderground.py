@@ -3,16 +3,14 @@ from pathlib import Path
 import sqlalchemy
 import datetime as dt
 import string
+import helpful_functions as hf
 
-db_connection_string = 'sqlite:///Resources/energy_data.db'
+
+# db_connection_string = 'sqlite:///Resources/energy_data.db'
 wunderground_csv_path_prefix = 'Resources/WeatherUnderground/Houston/Houston_'
 city_list = ['Austin', 'Corpus_Christi', 'Dallas', 'San_Angelo', 'San_Antonio']
 year_list = ['2020', '2021']
 
-
-def gen_csv_path(city_name):
-    csv_path = 'Resources/WeatherUnderground/' + city_name + '/' + city_name + '_'
-    return csv_path
 
 def gen_datetime(date_obj, time_str):
     time_obj = dt.datetime.strptime(time_str, '%I:%M %p')
@@ -42,13 +40,13 @@ def run():
             csv_path_list = []
             for i in range(1, 29):
                 day_string = str(i).zfill(2)
-                path_prefix = gen_csv_path(city)
+                path_prefix = hf.gen_wu_csv_path(city)
                 csv_path = Path(path_prefix + year + '_02_' + day_string + '.csv')
                 csv_path_list.append(csv_path)
             csv_path_dict[year][city] = csv_path_list
     print(csv_path_dict)
 
-    engine = sqlalchemy.create_engine(db_connection_string)
+    engine = sqlalchemy.create_engine(hf.db_connection_string)
     for city in city_list:
         for year in year_list:
             df = pd.read_csv(csv_path_dict[year][city][0])

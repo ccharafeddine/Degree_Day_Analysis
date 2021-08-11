@@ -1,0 +1,27 @@
+Description:,"Fahrenheit-based heating degree days with a base temperature of 65 F"
+Source:,"www.degreedays.net"
+Accuracy:,"Estimates were made to account for missing data: the ""% Estimated"" column shows how much each figure was affected (0% is best, 100% is worst)"
+Station:,"CORPUS CHRISTI INTERNATIONAL, TX, US (97.51W,27.77N)"
+Station ID:,KCRP
+
+Month starting,HDD 65,% Estimated
+2019-12-01,214.2,0
+2020-01-01,156.4,0
+2020-02-01,215.9,0.03
+2020-03-01,24,0
+2020-04-01,23.1,0
+2020-05-01,2.4,0
+2020-06-01,0,0
+2020-07-01,0,0
+2020-08-01,0,0.03
+2020-09-01,4.5,0
+2020-10-01,53.7,0
+2020-11-01,57.6,0
+2020-12-01,270.8,0
+2021-01-01,268.5,0
+2021-02-01,360.6,0
+2021-03-01,84.8,0
+2021-04-01,31.5,0
+2021-05-01,2.1,0
+2021-06-01,0,0
+2021-07-01,0,0
