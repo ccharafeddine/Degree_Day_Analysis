@@ -35,8 +35,8 @@ def gen_db_tables():
 
     for year in hf.year_list:
         for city in hf.city_list_2:
-            start_date = dt.datetime(year,2,1)
-            end_date = dt.datetime(year,2,29)
+            start_date = dt.datetime(int(year),2,1)
+            end_date = dt.datetime(int(year),2,28)
             print(city, year, start_date, end_date)
             df = gen_df_from_path_and_date_range(csv_path_dict[city], start_date, end_date)
             print(df)
