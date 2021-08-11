@@ -1,0 +1,27 @@
+Description:,"Fahrenheit-based heating degree days with a base temperature of 65 F"
+Source:,"www.degreedays.net"
+Accuracy:,"Estimates were made to account for missing data: the ""% Estimated"" column shows how much each figure was affected (0% is best, 100% is worst)"
+Station:,"AUSTIN-BERGSTROM INTERNATIONAL AIRPORT, TX, US (97.67W,30.19N)"
+Station ID:,KAUS
+
+Month starting,HDD 65,% Estimated
+2019-12-01,417.8,0.03
+2020-01-01,335.5,0
+2020-02-01,373.6,0.07
+2020-03-01,88,0
+2020-04-01,108.1,0
+2020-05-01,17.8,0
+2020-06-01,2.9,0
+2020-07-01,0,0
+2020-08-01,0,0
+2020-09-01,18,0
+2020-10-01,123.2,0.03
+2020-11-01,178.1,0
+2020-12-01,429.8,0.06
+2021-01-01,415.6,0
+2021-02-01,532.9,0
+2021-03-01,169.3,0
+2021-04-01,123.7,0
+2021-05-01,21.5,0
+2021-06-01,0.5,0
+2021-07-01,0,0

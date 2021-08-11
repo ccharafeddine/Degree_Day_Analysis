@@ -1,0 +1,27 @@
+Description:,"Fahrenheit-based heating degree days with a base temperature of 65 F"
+Source:,"www.degreedays.net"
+Accuracy:,"Estimates were made to account for missing data: the ""% Estimated"" column shows how much each figure was affected (0% is best, 100% is worst)"
+Station:,"DALLAS LOVE FIELD, TX, US (96.85W,32.85N)"
+Station ID:,KDAL
+
+Month starting,HDD 65,% Estimated
+2019-12-01,423.5,0
+2020-01-01,417.2,0
+2020-02-01,423,0.03
+2020-03-01,127.2,0
+2020-04-01,126.6,0
+2020-05-01,9.1,0
+2020-06-01,0,0
+2020-07-01,0,0
+2020-08-01,0,0
+2020-09-01,10.6,0
+2020-10-01,147.3,0
+2020-11-01,178.8,0
+2020-12-01,471.3,0.03
+2021-01-01,508.3,0
+2021-02-01,645,0
+2021-03-01,160.3,0
+2021-04-01,104.7,0
+2021-05-01,21.3,0
+2021-06-01,0.3,0
+2021-07-01,0,0
