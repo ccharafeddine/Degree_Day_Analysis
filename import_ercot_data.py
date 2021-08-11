@@ -85,18 +85,17 @@ def arrange_ercot_columns(df):
 
 
 filter_dict = {
-    'Austin':'', 
-    'Corpus_Christi':'', 
-    'Dallas':'', 
-    'Houston': 'HB_HOUSTON',
-    'San_Angelo':'', 
-    'San_Antonio':'',
+    'Austin':'LZ_AEN', 
+    'Corpus_Christi':'LZ_SOUTH', 
+    'Dallas':'LZ_NORTH', 
+    'Houston': 'LZ_HOUSTON',
+    'San_Angelo':'LZ_WEST', 
+    'San_Antonio':'LZ_CPS',
 }
 
 def gen_ercot_df(year, city, engine):
     df = get_ercot_month_df(rtm_csv_path_prefix, year+'-02')
-    settlement_point_filter = filter_dict[city]
-    df = clean_rtm_data(df, settlement_point_filter)
+    df = clean_rtm_data(df, filter_dict[city])
     df.to_sql('ERCOT_'+city+'_'+year, engine, if_exists='replace')
 
     return df
