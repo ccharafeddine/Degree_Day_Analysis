@@ -25,8 +25,8 @@ def gen_df_from_path_and_date_range(csv_path, start_date, end_date):
     dd_df = pd.read_csv(csv_path, skiprows=6)
     print(dd_df.head())
     dd_df.drop(columns=['% Estimated'], inplace=True)
-    dd_df['Month starting'] = dd_df.apply(lambda x: convert_datestring_to_datetime(x['Month starting']), axis=1)
-    dd_df.set_index('Month starting', inplace=True)
+    dd_df['Date'] = dd_df.apply(lambda x: convert_datestring_to_datetime(x['Date']), axis=1)
+    dd_df.set_index('Date', inplace=True)
     return dd_df.loc[start_date: end_date]
 
 
@@ -40,7 +40,7 @@ def gen_db_tables():
             print(city, year, start_date, end_date)
             df = gen_df_from_path_and_date_range(csv_path_dict[city], start_date, end_date)
             print(df)
-            df.to_sql('DegreeDays_'+city+'_'+str(year), con=engine, if_exists='replace')
+            df.to_sql('DegreeDays_'+city+'_'+year, con=engine, if_exists='replace')
     inspector = sqlalchemy.inspect(engine)
     print(inspector.get_table_names())
     return
