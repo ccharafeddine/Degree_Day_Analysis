@@ -2,7 +2,7 @@ import pandas as pd
 from pathlib import Path
 import sqlalchemy
 import datetime as dt
-import helpful_functions
+import helpful_functions as hf
 
 month_list = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 year_list = ['2019', '2020', '2021']
@@ -22,9 +22,8 @@ def get_ercot_month_df(path_prefix, month_str):
     return pd.read_csv(Path(path_prefix + month_str + '.csv'))
 
 
-def clean_rtm_data(df):
+def clean_rtm_data(df, settlement_point_filter):
     filter_column = 'Settlement Point Name'
-    settlement_point_filter = 'HB_HOUSTON'
 
     print(f"filtering data...")
     df = filter_rtm_data(df, filter_column, settlement_point_filter)
@@ -85,15 +84,38 @@ def arrange_ercot_columns(df):
     return df
 
 
+filter_dict = {
+    'Austin':'', 
+    'Corpus_Christi':'', 
+    'Dallas':'', 
+    'Houston': 'HB_HOUSTON',
+    'San_Angelo':'', 
+    'San_Antonio':'',
+}
+
+def gen_ercot_df(year, city, engine):
+    df = get_ercot_month_df(rtm_csv_path_prefix, year+'-02')
+    settlement_point_filter = filter_dict[city]
+    df = clean_rtm_data(df, settlement_point_filter)
+    df.to_sql('ERCOT_'+city+'_'+year, engine, if_exists='replace')
+
+    return df
+
+
 def run():
     # ERCOT data
     engine = sqlalchemy.create_engine(db_connection_string)
-    ercot_rtm_2020 = get_ercot_month_df(rtm_csv_path_prefix, '2020-02')
-    ercot_rtm_2021 = get_ercot_month_df(rtm_csv_path_prefix, '2021-02')
-    ercot_rtm_2020 = clean_rtm_data(ercot_rtm_2020)
-    ercot_rtm_2021 = clean_rtm_data(ercot_rtm_2021)
-    ercot_rtm_2020.to_sql('ERCOT_2020', engine, if_exists='replace')
-    ercot_rtm_2021.to_sql('ERCOT_2021', engine, if_exists='replace')
+    for city in hf.city_list_2:
+        for year in hf.year_list:
+            df = gen_ercot_df(year, city, engine)
+    # ercot_rtm_2020 = gen_ercot_df('2020', 'Houston', engine)
+    # ercot_rtm_2021 = gen_ercot_df('2021', 'Houston', engine)
+    # ercot_rtm_2020 = get_ercot_month_df(rtm_csv_path_prefix, '2020-02')
+    # ercot_rtm_2021 = get_ercot_month_df(rtm_csv_path_prefix, '2021-02')
+    # ercot_rtm_2020 = clean_rtm_data(ercot_rtm_2020, 'HB_HOUSTON')
+    # ercot_rtm_2021 = clean_rtm_data(ercot_rtm_2021, 'HB_HOUSTON')
+    # ercot_rtm_2020.to_sql('ERCOT_HOUSTON_2020', engine, if_exists='replace')
+    # ercot_rtm_2021.to_sql('ERCOT_HOUSTON_2021', engine, if_exists='replace')
     
     
 if __name__ == '__main__':
