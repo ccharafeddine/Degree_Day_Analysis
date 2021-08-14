@@ -1,6 +1,7 @@
 import os
 from dotenv import load_dotenv
 from pathlib import Path
+import pandas as pd
 import plotly.express as px
 
 db_connection_string = 'sqlite:///Resources/energy_data.db'
@@ -8,6 +9,23 @@ db_connection_string = 'sqlite:///Resources/energy_data.db'
 year_list = ['2020', '2021']
 city_list = ['Austin', 'Corpus_Christi', 'Dallas', 'San_Angelo', 'San_Antonio']
 city_list_2 = ['Austin', 'Corpus_Christi', 'Dallas', 'Houston', 'San_Angelo', 'San_Antonio']
+
+dti_dict = {
+    '2020' : pd.DataFrame(pd.date_range(
+        "2020-02-01", 
+        periods=24*28*4, 
+        freq="15T", 
+        name='Date')
+                         ),
+    '2021' : pd.DataFrame(pd.date_range(
+        "2021-02-01", 
+        periods=24*28*4, 
+        freq="15T", 
+        name='Date')
+                         )
+}
+dd_df_dict = {}
+
 
 def get_mapbox_api_token():
     # Load the .env file into the notebook
