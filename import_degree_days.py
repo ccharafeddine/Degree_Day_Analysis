@@ -25,8 +25,9 @@ def gen_df_from_path_and_date_range(csv_path, start_date, end_date):
     dd_df = pd.read_csv(csv_path, skiprows=6)
     print(dd_df.head())
     dd_df.drop(columns=['% Estimated'], inplace=True)
-    dd_df['Date'] = dd_df.apply(lambda x: convert_datestring_to_datetime(x['Date']), axis=1)
-    dd_df.set_index('Date', inplace=True)
+    dd_df = dd_df.rename(columns={'Date': 'Datetime'})
+    dd_df['Datetime'] = dd_df.apply(lambda x: convert_datestring_to_datetime(x['Datetime']), axis=1)
+    dd_df.set_index('Datetime', inplace=True)
     return dd_df.loc[start_date: end_date]
 
 
