@@ -9,6 +9,8 @@ db_connection_string = 'sqlite:///Resources/energy_data.db'
 year_list = ['2020', '2021']
 city_list = ['Austin', 'Corpus_Christi', 'Dallas', 'San_Angelo', 'San_Antonio']
 city_list_2 = ['Austin', 'Corpus_Christi', 'Dallas', 'Houston', 'San_Angelo', 'San_Antonio']
+cities = ['Austin', 'Corpus_Christi', 'Dallas', 'Houston', 'San_Angelo', 'San_Antonio']
+data_sources = ['DegreeDays', 'WU', 'ERCOT']
 
 dti_dict = {
     '2020' : pd.DataFrame(pd.date_range(
