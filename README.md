@@ -36,3 +36,4 @@ Analysis of degree day data correlating energy demand with supply prices.
 ## License
 This project is licensed under the MIT License.
 [Click Here](https://github.com/rdillens/Degree_Day_Analysis/blob/main/LICENSE) for more information.
+![Temperature Feb 2020 vs 2021](Images/Final_Plots/Temperature (F) February 2020 vs. 2021.png)
