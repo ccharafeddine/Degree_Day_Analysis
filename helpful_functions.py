@@ -17,13 +17,13 @@ dti_dict = {
         "2020-02-01", 
         periods=24*28*4, 
         freq="15T", 
-        name='Date')
+        name='Datetime')
                          ),
     '2021' : pd.DataFrame(pd.date_range(
         "2021-02-01", 
         periods=24*28*4, 
         freq="15T", 
-        name='Date')
+        name='Datetime')
                          )
 }
 dd_df_dict = {}
