@@ -44,21 +44,24 @@ def run():
                 csv_path = Path(path_prefix + year + '_02_' + day_string + '.csv')
                 csv_path_list.append(csv_path)
             csv_path_dict[year][city] = csv_path_list
-    print(csv_path_dict)
+    # print(csv_path_dict)
+    
 
     engine = sqlalchemy.create_engine(hf.db_connection_string)
     for city in city_list:
         for year in year_list:
+            print(csv_path_dict[year][city])
             df = pd.read_csv(csv_path_dict[year][city][0])
-            df['Datetime'] = df.apply(lambda x: gen_datetime(dt.date(2020,2,1), x['Time']),axis=1)
+            df['Datetime'] = df.apply(lambda x: gen_datetime(dt.date(int(year),2,1), x['Time']),axis=1)
             df = clean_dataframe(df)
             for i, path in enumerate(csv_path_dict[year][city][1:]):
                 new_df = pd.read_csv(path)
-                new_df['Datetime'] = new_df.apply(lambda x: gen_datetime(dt.date(2020,2,i+2), x['Time']),axis=1)
+                new_df['Datetime'] = new_df.apply(lambda x: gen_datetime(dt.date(int(year),2,i+2), x['Time']),axis=1)
                 new_df = clean_dataframe(new_df)
                 df = df.append(new_df, ignore_index=True)
             df.set_index('Datetime', inplace=True)
-            print(df)
+            print(city, year, df)
+
             table_name = 'WU_' + city + '_' + year
             df.to_sql(table_name, con=engine, if_exists='replace')
 
@@ -80,7 +83,7 @@ def run():
         new_df = clean_dataframe(new_df)
         wu_2020_df = wu_2020_df.append(new_df, ignore_index=True)
     wu_2020_df.set_index('Datetime', inplace=True)
-    print(wu_2020_df)
+    print('wu 2020 df', wu_2020_df)
 
 #    Feb 2021 filenames
     csv_path_list = []
@@ -99,7 +102,7 @@ def run():
 
         wu_2021_df = wu_2021_df.append(new_df, ignore_index=True)
     wu_2021_df.set_index('Datetime', inplace=True)
-    print(wu_2021_df)
+    print('wu 2021 df', wu_2021_df)
 
     wu_2020_df.to_sql('WU_Houston_2020', con=engine, if_exists='replace')
     wu_2021_df.to_sql('WU_Houston_2021', con=engine, if_exists='replace')
