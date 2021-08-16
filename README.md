@@ -21,14 +21,11 @@ Analysis of degree day data correlating energy demand with supply prices.
 3. Is there any date in the range of data that shows a significant change in energy price?  
 - **User Story:** As a user, I want to be able to visually correlate the temperature and price data, so that I don't have to look at spreadsheets.
 
-<!-- ![HDD Feb 2020](Images\DD_Houston_2020.png)
-![HDD Feb 2020](Images\DD_Houston_2021.png) -->
+![Mapbox Plot](Images/Final_Plots/newplot.png)
 ![HDD Feb 2020 vs 2021](Images/DD_Houston_overlay.png)
-![HDD Feb 2020](Images/ERCOT_Houston_2020.png)
-![HDD Feb 2020](Images/ERCOT_Houston_2021.png)
-![HDD Feb 2020](Images/ercot_overlay.png)
 ![HDD Feb 2020](Images/wu_houston_overlay.png)
 ![HDD Feb 2020](Images/Final_Plots/ERCOT_RTM_Feb_2020_vs_2021.png)
+![HDD Feb 2020](Images/ercot_overlay.png)
 
 ---
 ## Installation Instructions

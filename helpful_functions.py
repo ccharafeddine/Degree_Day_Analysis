@@ -12,6 +12,63 @@ city_list_2 = ['Austin', 'Corpus_Christi', 'Dallas', 'Houston', 'San_Angelo', 'S
 cities = ['Austin', 'Corpus_Christi', 'Dallas', 'Houston', 'San_Angelo', 'San_Antonio']
 data_sources = ['DegreeDays', 'WU', 'ERCOT']
 
+city_coords_dict = {
+    # Load Zone: North
+## City: Austin
+# - 30.2672° N, 97.7431° W
+    'Austin':(30.2672, -97.7431),
+
+## City: Corpus Christi
+# - 27.8006° N, 97.3964° W
+    'Corpus_Christi':(27.8006, -97.3964),
+
+## City: Dallas
+# - 32.7767° N, 96.7970° W
+    'Dallas':(32.7767, -96.7970),
+
+## City: Houston
+# - 29.7604° N, 95.3698° W
+    'Houston':(29.7604, -95.3698),
+
+## City: San Angelo
+# - 100.50° N, 31.35° W
+    'San_Angelo':(31.35, -100.50),
+
+## City: San Antonio
+# - 29.4241° N, 98.4936° W
+    'San_Antonio':(29.4241, -98.4936),
+}
+
+
+city_coords_dict_2 = {
+    # Load Zone: North
+## City: Austin
+# - 30.2672° N, 97.7431° W
+    'Austin':{'Lat': 30.2672, 'Long': 97.7431},
+
+## City: Corpus Christi
+# - 27.8006° N, 97.3964° W
+    'Corpus_Christi':{'Lat': 27.8006, 'Long': 97.3964},
+
+## City: Dallas
+# - 32.7767° N, 96.7970° W
+    'Dallas':{'Lat': 32.7767, 'Long': 96.7970},
+
+## City: Houston
+# - 29.7604° N, 95.3698° W
+    'Houston':{'Lat': 29.7604, 'Long': 95.3698},
+
+## City: San Angelo
+# - 100.50° N, 31.35° W
+    'San_Angelo':{'Lat': 100.50, 'Long': 31.35},
+
+## City: San Antonio
+# - 29.4241° N, 98.4936° W
+    'San_Antonio':{'Lat': 29.4241, 'Long': 98.4936},
+}
+
+
+
 dti_dict = {
     '2020' : pd.DataFrame(pd.date_range(
         "2020-02-01", 
