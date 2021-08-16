@@ -23,7 +23,7 @@ Analysis of degree day data correlating energy demand with supply prices.
 
 ### Visualization of Energy Price vs Demand:
 ![Mapbox Plot](Images/Final_Plots/newplot.png)
-Interactive plot [here](html/mapbox.html): 
+### Interactive plot [here](https://rdillens.github.io/Degree_Day_Analysis/)
 ![HDD Feb 2020 vs 2021](Images/DD_Houston_overlay.png)
 ![HDD Feb 2020](Images/wu_houston_overlay.png)
 ![HDD Feb 2020](Images/Final_Plots/ERCOT_RTM_Feb_2020_vs_2021.png)
