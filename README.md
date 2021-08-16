@@ -21,6 +21,22 @@ Analysis of degree day data correlating energy demand with supply prices.
 3. Is there any date in the range of data that shows a significant change in energy price?  
 - **User Story:** As a user, I want to be able to visually correlate the temperature and price data, so that I don't have to look at spreadsheets.
 
+<!-- ![HDD Feb 2020](Images\DD_Houston_2020.png)
+![HDD Feb 2020](Images\DD_Houston_2021.png) -->
+![HDD Feb 2020 vs 2021](Images\DD_Houston_overlay.png)
+![HDD Feb 2020](Images\ERCOT_Houston_2020.png)
+![HDD Feb 2020](Images\ERCOT_Houston_2021.png)
+![HDD Feb 2020](Images\ercot_overlay.png)
+![HDD Feb 2020](Images\wu_houston_overlay.png)
+![HDD Feb 2020](Images\Final_Plots\ERCOT_RTM_Feb_2020_vs_2021.png)
+
+---
+## Installation Instructions
+To save the images, you must install the package:
+```shell
+conda install -c conda-forge firefox geckodriver
+```
+
 ---
 ## Data Sources
 - [ERCOT](http://www.ercot.com/about) 
@@ -36,4 +52,3 @@ Analysis of degree day data correlating energy demand with supply prices.
 ## License
 This project is licensed under the MIT License.
 [Click Here](https://github.com/rdillens/Degree_Day_Analysis/blob/main/LICENSE) for more information.
-![Temperature Feb 2020 vs 2021](Images/Final_Plots/Temperature (F) February 2020 vs. 2021.png)
